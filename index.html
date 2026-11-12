@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXUS</title>
+<meta name="description" content="NEXUS is a personal multi-agent workspace used by one person on their own computer and server.">
+<style>
+  :root { --bg: #ffffff; --fg: #1b1f24; --muted: #59636e; --line: #d8dee4; --accent: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1115; --fg: #e6e8eb; --muted: #9aa4af; --line: #2a2f36; --accent: #8ab4f8; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 72px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NEXUS</h1>
+  <p class="lead">A personal multi-agent workspace. One person runs it on their own computer and their own server.</p>
+
+  <h2>What it is</h2>
+  <p>NEXUS coordinates a team of AI agents working on the owner's projects. It keeps project documents in sync between the owner's PC, the owner's server and the owner's Google Drive.</p>
+
+  <h2>Who it is for</h2>
+  <p>Only its owner. It is not offered to the public, there is no sign-up, and nobody else's data is involved.</p>
+
+  <h2>How it uses Google Drive</h2>
+  <ul>
+    <li>It uses Google's <code>drive.file</code> permission, so it can only see and change files that NEXUS itself created.</li>
+    <li>It keeps those files in one folder, <code>NEXUS</code>, in the owner's own Google Drive.</li>
+    <li>It cannot see any other files in the Drive.</li>
+  </ul>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>NEXUS is a personal project. Questions: <a href="https://github.com/ahmedthedeveloper">github.com/ahmedthedeveloper</a></footer>
+</main>
+</body>
+</html>
